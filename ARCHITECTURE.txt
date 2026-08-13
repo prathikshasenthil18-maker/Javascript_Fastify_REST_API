@@ -1,0 +1,7 @@
+Scenario 1 Monolithic — Fastify REST API
+Branch: Version_16
+Customer Version: 16 (ES2021 / Node.js 16)
+
+Client -> Fastify (src/server.js) -> /api/v1/* routes -> src/domain/*
+Build: esbuild bundles src/server.js -> dist/server.js (deps external)
+tools/ -> linked alt-tool runners against real project sources
