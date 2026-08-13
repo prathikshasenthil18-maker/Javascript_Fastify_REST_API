@@ -1,0 +1,7 @@
+Scenario 1 Monolithic — Fastify REST API
+Branch: Version_14
+Customer Version: 14 (ES2020 / Node.js 14)
+
+Client -> Fastify (src/server.js) -> /api/v1/* routes -> src/domain/*
+Build: esbuild bundles src/server.js -> dist/server.js (deps external)
+tools/ -> linked alt-tool runners against real project sources
